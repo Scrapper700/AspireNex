@@ -252,6 +252,18 @@ a:hover {
             background-color: palegreen
         }
     }
+
+    @media(max-width:360px) {
+        font-size: 15px;
+    }
+}
+
+
+.call-to-action a.button {
+    margin: 0 0px;
+    /* Add spacing between buttons (adjust as needed) */
+    color: inherit;
+    font-size: 15px
 }
 
 h1 {
@@ -285,50 +297,111 @@ h1 {
         flex-direction: column;
         justify-content: center;
 
+
         span {
-            @media (max-width:768px) {
+            @media(max-width:768px) {
                 font-size: 50px;
             }
         }
 
+
+        @media (max-width: 360px) {
+            .name {
+                font-size: 25px;
+                line-height: 0.2rem;
+            }
+        }
+
+
+        @media (max-width: 360px) {
+            .name2 {
+                font-size: 15px;
+                line-height: 0.2rem;
+                font-weight: bold;
+            }
+        }
+
+
+        @media (max-width: 360px) {
+            #cycling-text p {
+                font-size: 15px;
+                line-height: 0.2rem;
+            }
+        }
+
+
+        p {
+            @media(max-width:540px) {
+                font-size: 15px;
+                line-height: 1rem;
+            }
+
+            @media(max-width:470px) {
+                font-size: 10px;
+                line-height: 1rem;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 11.5px;
+                line-height: 0.3rem;
+            }
+        }
+
         .call-to-action {
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 10px;
 
             a {
-                margin-right: 10px;
+                margin-right: 20px;
                 margin-bottom: 10px;
             }
-        }
 
-        .social-links {
-            a {
-                &:hover {
-                    text-decoration: none;
-
-                }
+            @media(max-width:360px) {
+                font-weight: bold;
             }
         }
-
     }
 
-    .hero-yellow {
-        flex: 1;
-        background-color: var(--yellow-100);
-        border-radius: 30px;
-        padding: 0px 30px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        background-color: #cfb5cb;
-
-        img {
-            border-radius: 50px;
-            margin-top: -30px;
-            max-width: 420px;
-            margin-bottom: -15px;
-            margin-right: -15px;
+    @media only screen and (max-width: 360px) {
+        .call-to-action a.button {
+            margin: 1px;
+            /* Remove spacing on smaller screens (optional) */
+            font-size: 10px;
+            height: 40px;
+            width: 105px;
+            /* justify-content: center;
+              align-items: center; */
         }
+    }
+
+
+    .social-links {
+        a {
+            &:hover {
+                text-decoration: none;
+
+            }
+        }
+    }
+
+}
+
+.hero-yellow {
+    flex: 1;
+    background-color: var(--yellow-100);
+    border-radius: 30px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #cfb5cb;
+
+    img {
+        border-radius: 50px;
+        margin-top: -30px;
+        max-width: 420px;
+        margin-bottom: -15px;
+        margin-right: -15px;
     }
 }
 
@@ -766,7 +839,8 @@ h3 {
 .footer .footer-section {
     flex: 1;
     padding: 20px;
-    min-width: 250px; /* Ensures sections don't get too small */
+    min-width: 250px;
+    /* Ensures sections don't get too small */
 }
 
 .footer .logo-text {
@@ -854,19 +928,22 @@ h3 {
 
     .footer .footer-section {
         padding: 10px;
-        min-width: 100%; /* Full width for small screens */
+        min-width: 100%;
+        /* Full width for small screens */
     }
 
-    .footer .socials a{
+    .footer .socials a {
         margin: 0 5px;
     }
 
     .footer .links ul a {
-        margin: 8px 0; /* Adjust the margin for medium screens */
-        font-size: 1rem; /* Adjust the font size for medium screens */
+        margin: 8px 0;
+        /* Adjust the margin for medium screens */
+        font-size: 1rem;
+        /* Adjust the font size for medium screens */
 
     }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -941,6 +1018,8 @@ h3 {
 .linkstop {
     margin-left: 20px;
 
+
+
 }
 
 .linkstop a img {
@@ -952,17 +1031,26 @@ h3 {
 
 #one {
     margin-right: -15px;
+
+    @media(max-width:360px) {
+        margin-left: 30px;
+    }
 }
 
+
+
 .logo-img {
-    width: 100px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    /* Set the desired width */
+    height: auto;
+    /* Maintain aspect ratio */
     border-radius: 20px;
     color: #72aab0;
 }
 
 #cycling-text p {
-    display: none; /* Hide all texts initially */
+    display: none;
+    /* Hide all texts initially */
     font-size: 20px;
     color: #333;
     margin: 10px 0;
@@ -982,11 +1070,11 @@ h3 {
 }
 
 .social-links a img {
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
 }
 
 .social-links a img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
